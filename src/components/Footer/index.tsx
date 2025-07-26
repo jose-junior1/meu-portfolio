@@ -9,12 +9,20 @@ const Rodape = () => {
             <Logo>
                 J <span>J</span>
             </Logo>
-            <p>
+            <a
+                href="https://github.com/jose-junior1"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <img src={gitHubIcon} alt="Ícone GitHub" />
-            </p>
-            <p>
+            </a>
+            <a
+                href="https://www.linkedin.com/in/josejunior-dev"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <img src={linkedinIcon} alt="Ícone LinkedIn" />
-            </p>
+            </a>
         </RodapeContainer>
     )
 }
