@@ -1,7 +1,9 @@
 import ButtonUp from "../../components/Buttons/ButtonUp/ButtonUp"
-// import Rodape from "../../components/Footer"
+import Contato from "../../components/Contato"
+import Rodape from "../../components/Footer"
 import Home from "../../components/Home"
 import Menu from "../../components/Menu"
+import Projetos from "../../components/Projetos"
 import Sobre from "../../components/Sobre"
 import { Container } from "./ContainerStyle"
 
@@ -11,8 +13,10 @@ const HomeContainer = () => {
             <Menu />
             <Home />
             <Sobre />
+            <Projetos />
+            <Contato />
             <ButtonUp />
-            {/* <Rodape /> */}
+            <Rodape />
         </Container>
     )
 }

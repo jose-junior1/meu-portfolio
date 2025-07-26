@@ -5,7 +5,7 @@ export const MenuContainer = styled.nav`
     z-index: 1;
     width: 100%;
     padding: 32px;
-    background-color: rgba(27,27,27,0.5);;
+    background-color: rgba(27,27,27,0.1);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,18 +16,17 @@ export const Logo = styled.h1`
     position: absolute;
     left: 32px;
     font-weight: 700;
+    font-size: 32px;
     color: #fff;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-
-    span {
-        color: #00BFFF;
-    }
+    letter-spacing: -3px;
 `
 
 export const NavLinks = styled.ul`
     display: flex;
     gap: 30px;
+    cursor: pointer;
 `
 
 export const NavItem = styled.li`

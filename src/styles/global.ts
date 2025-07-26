@@ -8,6 +8,15 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    /* html {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+
+    section {
+        scroll-snap-align: start;
+    } */
+
     -ms-hyphenate-limit-chars, body {
         height: 100%;
     }
@@ -50,5 +59,14 @@ export const GlobalStyle = createGlobalStyle`
 
     h2 {
         font-family: 'Montserrat', sans-serif;
+        font-size: 34px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        color: #f1f1f1;
+    }
+
+    span {
+        color: #00BCD4;
+        font-weight: bold;
     }
 `

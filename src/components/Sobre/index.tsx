@@ -1,5 +1,4 @@
 import { ContainerSobre, ContainerTexto } from "./styles"
-
 const Sobre = () => {
     return (
         <ContainerSobre id="sobre">

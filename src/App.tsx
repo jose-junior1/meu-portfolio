@@ -1,21 +1,25 @@
-import { BrowserRouter, Routes } from "react-router-dom";
-
-import HomeContainer from "./containers/HomeContainer/HomeContainer";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { GlobalStyle } from "./styles/global";
+import Home from "./pages/Home";
+import Projetos from "./pages/Projetos";
+
+const rotas = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />
+  },
+  {
+    path: '/projetos',
+    element: <Projetos />
+  }
+])
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <BrowserRouter>
-        <HomeContainer />
-        {/* <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/projetos' element={<Projetos />} />
-          <Route path='/contato' element={<Contato />} />
-        </Routes> */}
-      </BrowserRouter>
+      <RouterProvider router={rotas} />
     </>
   );
 }
