@@ -1,7 +1,8 @@
 import * as S from "../Projetos/styles"
-import { Container, Content } from "./styles"
+import { BtnGitHub, Container, Content } from "./styles"
 
 import externalLink from "../../assets/img/icons/external-link.png"
+import gitHubIcon from "../../assets/img/icons/github64.png"
 
 const ListagemProjetos = () => {
     return (
@@ -148,6 +149,14 @@ const ListagemProjetos = () => {
                     </p>
                     <img src={externalLink} alt="" />
                 </S.Card>
+                <BtnGitHub
+                    href="https://github.com/jose-junior1?tab=repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Ver lista completa dos repositórios GitHub
+                    <img src={gitHubIcon} alt="GitHub" />
+                </BtnGitHub>
             </Content>
         </Container>
     )

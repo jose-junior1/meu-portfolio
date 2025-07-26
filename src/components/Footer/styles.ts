@@ -5,19 +5,24 @@ export const RodapeContainer = styled.footer`
     align-items: center;
     justify-content: center;
     background-color: #161616ff;
-    height: 100px;
+    padding: 16px;
+    gap: 30px;
 
     p {
         margin-right: 30px;
 
-        img {
-            height: 48px;
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
+    }
+    
+    a {
+        transition: transform 0.3s ease-in-out;
 
-            &:hover {
-                transform: scale(1.07);
-            }
+        &:hover {
+            transform: scale(1.07);
         }
     }
-`
+
+    img {
+        height: 40px;
+        cursor: pointer;
+    }
+    `

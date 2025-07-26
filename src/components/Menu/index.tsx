@@ -20,6 +20,9 @@ const Menu = () => {
                 <S.NavItem>
                     <Link to='contato' smooth={true}duration={500}>Contato</Link>
                 </S.NavItem>
+                <S.NavItem>
+                    <Link to='creditos' smooth={true}duration={500}>Créditos</Link>
+                </S.NavItem>
             </S.NavLinks>
         </S.MenuContainer>
     )

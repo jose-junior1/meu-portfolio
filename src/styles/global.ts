@@ -8,19 +8,6 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    /* html {
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-    }
-
-    section {
-        scroll-snap-align: start;
-    } */
-
-    -ms-hyphenate-limit-chars, body {
-        height: 100%;
-    }
-
     body {
         min-height: 100vh;
         display: flex;
@@ -61,7 +48,8 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Montserrat', sans-serif;
         font-size: 34px;
         text-transform: uppercase;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        text-align: center;
         color: #f1f1f1;
     }
 

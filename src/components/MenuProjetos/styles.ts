@@ -7,9 +7,9 @@ export const Header = styled.header`
     z-index: 1;
     top: 0;
     width: 100%;
-    background-color: rgba(27,27,27,0.9);
+    background-color: rgba(27,27,27,0.1);
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     padding: 16px;

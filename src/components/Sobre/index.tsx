@@ -1,8 +1,11 @@
-import { ContainerSobre, ContainerTexto } from "./styles"
+import { BtnDownload, ContainerSobre, ContainerTexto } from "./styles"
+
+import downloadIcon from "../../assets/img/icons/download.png"
+
 const Sobre = () => {
     return (
-        <ContainerSobre id="sobre">
-            <ContainerTexto>
+        <ContainerSobre id="sobre" className="section">
+            <ContainerTexto className="content">
                 <h2>Quem sou eu</h2>
                 <div>
                     <p>
@@ -12,19 +15,20 @@ const Sobre = () => {
                         Tenho formação em Análise e Desenvolvimento de Sistemas pela Universidade Anhembi Morumbi e estou me especializando em Engenharia Front-End pela EBAC, com foco em tecnologias como <span>React, TypeScript, JavaScript moderno, HTML, CSS</span> e <span>ferramentas de build</span>.
                     </p>
                     <p>
-                        Embora minha experiência profissional até agora tenha sido em áreas como manutenção de redes e infraestrutura técnica, venho me dedicando intensamente à transição para o desenvolvimento web. Estou sempre buscando novos desafios e oportunidades para crescer como desenvolvedor.
-                    </p>
-                    <p>
-                        Nas horas vagas, gosto de jogar videogame, ver reviews no YouTube e explorar ideias criativas.
-
+                        Embora minha experiência profissional até agora tenha sido em outras áreas, venho me dedicando intensamente à transição para o desenvolvimento web. Estou sempre buscando novos desafios e oportunidades para crescer como desenvolvedor.
                     </p>
                     <p>
                         Meu objetivo é usar tecnologia para transformar ideias em soluções úteis, responsivas e acessíveis. Estou em busca da minha primeira oportunidade profissional na área de desenvolvimento front-end.
                     </p>
-                    <p>
-                        Vamos construir algo incrível juntos? 😄
-                    </p>
                 </div>
+                <BtnDownload
+                    href="https://drive.google.com/file/d/15KV4bFlSnEkN96nv_scYoDr5KKhtA2Sa/view?usp=drivesdk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src={downloadIcon} alt="Baixar" />
+                    Download CV
+                </BtnDownload>
             </ContainerTexto>
         </ContainerSobre>
     )

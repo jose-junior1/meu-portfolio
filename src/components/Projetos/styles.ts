@@ -14,30 +14,26 @@ export const Container = styled.section`
 `
 
 export const Content = styled.div`
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
-    gap: 10px;
+`
 
-    h2 {
-        border-bottom: 2px solid #00BCD4;
-        padding-bottom: 10px;
-        text-align: left;
-    }
+export const ContainerCard = styled.div`
+    overflow: hidden;
 `
 
 export const Card = styled.a`
-    width: 100%;
-    height: 100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #1b1a1aff;
-    padding: 16px 30px;
-    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
     transition: transform 0.2s ease-in-out;
-    border-radius: 5px;
+    border: 1px solid transparent;
     
     &:hover {
         transform: scale(1.02);
@@ -49,9 +45,7 @@ export const Card = styled.a`
     }
 
     img {
-        position: absolute;
-        right: 16px;
-        height: 40px;
+        height: 30px;
     }
 `
 
@@ -61,13 +55,14 @@ export const BtnProjects = styled(Link)`
     gap: 20px;
     margin-top: 20px;
     color: #fff;
-    background-color: #363636;
+    background-color: #1d1d1dff;
     padding: 16px;
     border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     width: 260px;
     text-align: center;
+    border: 2px solid black;
 
     &:hover {
         transform: scale(1.05);

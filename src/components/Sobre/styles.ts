@@ -50,3 +50,24 @@ export const ContainerTexto = styled.div`
         font-size: 18px;
     }
 `
+
+export const BtnDownload = styled.a`
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    margin: 16px auto;
+    border-radius: 10px;
+    background-color: #21613cff;
+    padding: 16px;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        height: 16px;
+    }
+`

@@ -15,7 +15,7 @@ const Projetos = () => {
                     <p>
                         Minhas Tarefas — App de Gestão com React + Redux
                     </p>
-                    <img src={externalLink} alt="" />
+                    <img src={externalLink} alt="Link" />
                 </Card>
                 <Card
                     href="https://webpousada.vercel.app/"
@@ -25,7 +25,7 @@ const Projetos = () => {
                     <p>
                         Pousada Secreta - A pousada reservada em Angra dos Reis
                     </p>
-                    <img src={externalLink} alt="" />
+                    <img src={externalLink} alt="Link" />
                 </Card>
                 <Card
                     href="https://recanto-dos-livros.vercel.app/"
@@ -35,7 +35,7 @@ const Projetos = () => {
                     <p>
                         Recanto dos Livros — Uma livraria espetacular
                     </p>
-                    <img src={externalLink} alt="" />
+                    <img src={externalLink} alt="Link" />
                 </Card>
                 <BtnProjects to='/projetos'>
                     <img src={project} alt="Projetos" />

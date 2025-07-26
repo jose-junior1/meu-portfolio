@@ -1,5 +1,6 @@
 import ButtonUp from "../../components/Buttons/ButtonUp/ButtonUp"
 import Contato from "../../components/Contato"
+import Credits from "../../components/Credits"
 import Rodape from "../../components/Footer"
 import Home from "../../components/Home"
 import Menu from "../../components/Menu"
@@ -15,6 +16,7 @@ const HomeContainer = () => {
             <Sobre />
             <Projetos />
             <Contato />
+            <Credits />
             <ButtonUp />
             <Rodape />
         </Container>

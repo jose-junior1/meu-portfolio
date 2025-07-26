@@ -1,19 +1,9 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Outlet, createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { GlobalStyle } from "./styles/global";
 import Home from "./pages/Home";
 import Projetos from "./pages/Projetos";
-
-const rotas = createBrowserRouter([
-  {
-    path: '/',
-    element: <Home />
-  },
-  {
-    path: '/projetos',
-    element: <Projetos />
-  }
-])
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -23,5 +13,25 @@ function App() {
     </>
   );
 }
+
+function Root() {
+  return (
+    <>
+      <ScrollToTop />
+      <Outlet />
+    </>
+  )
+}
+
+const rotas = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/projetos', element: <Projetos /> },
+    ],
+  },
+]);
 
 export default App;

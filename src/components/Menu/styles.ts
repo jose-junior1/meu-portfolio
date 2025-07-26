@@ -5,9 +5,9 @@ export const MenuContainer = styled.nav`
     z-index: 1;
     width: 100%;
     padding: 32px;
-    background-color: rgba(27,27,27,0.1);
+    background-color: rgba(27,27,27,0);
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 `

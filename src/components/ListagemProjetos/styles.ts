@@ -9,9 +9,8 @@ export const Container = styled.section`
     min-height: 100vh;
     color: #f1f1f1;
     position: relative;
-    overflow-y: auto;
-    margin-top: 140px;
-    margin-bottom: 100px;
+    overflow-y: hidden;
+    padding: 100px 0;
 
     h2 {
         border-bottom: 2px solid #00BCD4;
@@ -22,9 +21,29 @@ export const Container = styled.section`
 
 export const Content = styled.div`
     display: grid;
-    gap: 10px;
+    gap: 30px;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 1000px;
     width: 100%;
+`
+
+export const BtnGitHub = styled.a`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:400px;
+    background-color: #0a0a0aff;
+    border: 2px solid black;
+    padding: 16px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        height: 30px;
+    }
 `
