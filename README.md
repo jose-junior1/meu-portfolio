@@ -1,46 +1,106 @@
-# Getting Started with Create React App
+# 💼 Meu Portfólio Profissional - José Junior
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido com **React** e **styled-components**, com navegação utilizando **React Router DOM**. O objetivo é apresentar meus projetos, habilidades, contato e experiências profissionais de forma clara e responsiva.
 
-## Available Scripts
+🔗 [Acesse o Portfólio Online](https://portfoliojosejuniordev.vercel.app/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Página **Home** com destaque para perfil, descrição e botões de contato.
+- Página de **Projetos** listando meus principais trabalhos com links reais para GitHub e deploys.
+- Layout **responsivo** para desktop e mobile.
+- Estilização com **styled-components** e sistema de breakpoints customizados.
+- Integração com **WhatsApp**, **LinkedIn**, **GitHub**, **e-mail** e link para **currículo em PDF**.
+- Código limpo, modularizado e reutilizável.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://reactjs.org/)
+- [React Router DOM](https://reactrouter.com/)
+- [Styled-components](https://styled-components.com/)
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- HTML5 + CSS3
+- Deploy via Vercel
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Estrutura do Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+meu-portfolio/
+├── public/
+├── src/
+│   ├── assets/              # Logos e imagens
+│   ├── components/          # Componentes reutilizáveis (Home, Footer, Menu, etc.)
+│   ├── pages/               # Páginas Home e Projetos
+│   ├── styles/              # Estilos globais e breakpoints responsivos
+│   ├── App.tsx              # Definição das rotas
+│   └── main.tsx             # Ponto de entrada do app
+├── .gitignore
+├── README.md
+└── package.json
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📌 Como rodar localmente
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone o repositório:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/jose-junior1/meu-portfolio.git
+cd meu-portfolio
+```
+2. Instale as dependências:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+    npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Inicie o servidor de desenvolvimento:
 
-## Learn More
+```
+    npm run start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Acesse o navegador:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+    http://localhost:5173
+```
+
+> Obs: Este projeto utiliza Vite como bundler.
+
+---
+
+## 📄 Currículo
+Meu currículo pode ser visualizado ou baixado através do link abaixo:
+
+👉 [Ver Currículo PDF no Google Drive](https://drive.google.com/file/d/15KV4bFlSnEkN96nv_scYoDr5KKhtA2Sa/view?usp=drivesdk)
+
+---
+
+## 🚀 Deploy
+Este portfólio está hospedado gratuitamente via GitHub Pages:
+
+🌍 https://jose-junior1.github.io/meu-portfolio/
+
+---
+
+## 📬 Contato
+
+- [LinkedIn](linkedin.com/in/josejunior-dev)
+
+- [GitHub](github.com/jose-junior1)
+
+- [WhatsApp](https://wa.me/5511996411760)
+
+- [E-mail](jose.j.j.silva634@email.com)
+
+---
+
+> Desenvolvido com 💙 por José Junior
