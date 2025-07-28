@@ -25,27 +25,44 @@ export const Content = styled.div`
     }
 
     a {
+        position: relative;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 30px;
         padding: 24px;
         background-color: #242323ff;
-        margin-bottom: 20px;
+        font-size: 18px;
+        margin: 50px auto 20px auto;
         border-radius: 8px;
+        width: 50%;
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
+        border: 1px solid transparent;
 
         &:hover {
             transform: scale(1.02);
+            border: 1px solid #00BCD4;
         }
 
         img {
             height: 40px;
             width: 40px;
+            position: absolute;
+            left: 16px;
         }
     }
 
     ${breakpoints.mobile`
         width: 100%;
+
+        a {
+            width: 100%;
+            justify-content: center;
+        }
+
+        a:last-child{
+            justify-content: right;
+        }
     `}
 `
