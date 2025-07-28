@@ -1,12 +1,18 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/responsive";
 
 export const ContainerCredits = styled.section`
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
     background-color: rgba(0,0,0,0.8);
+
+    ${breakpoints.mobile`
+        padding: 24px;
+    `}
 `
 
 export const ContainerText = styled.div`
@@ -32,6 +38,12 @@ export const ContainerText = styled.div`
     .livro {
         color: #DCDCDC;
     }
+
+    ${breakpoints.mobile`
+        p {
+            line-height: 20px;
+        }
+    `}
 `
 
 export const Citacao = styled.blockquote`
@@ -69,7 +81,6 @@ export const Tecnologies = styled.div`
     padding-bottom: 16px;
     margin: 16px auto 30px auto;
     border-bottom: 2px solid #00BCD4;
-    
     a {
         transition: transform 0.3s ease-in-out;
         
@@ -114,4 +125,19 @@ export const Tecnologies = styled.div`
         border: 1px solid #FF4500;
         background-color: rgba(0,0,0,1);
     }
+
+    ${breakpoints.mobile`
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        img, .react-scroll {
+            width: 60px;
+            height: 60px;
+        }
+
+        .react-scroll{
+            margin: 0 auto;
+        }
+    `}
 `

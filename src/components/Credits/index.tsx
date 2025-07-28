@@ -6,7 +6,7 @@ const Credits = () => {
             <h2>Créditos</h2>
             <ContainerText>
                 <p>
-                    Primeiramente, gostaria de agradecer a <strong>Deus</strong>, pois sem Ele nada disso seria possível. Em segundo lugar, agradeço a você, que dedicou um tempo para conhecer um pouco sobre o meu trabalho.
+                    Primeiramente, gostaria de agradecer a <strong>Deus</strong>, pois sem <strong>Ele</strong> nada disso seria possível. Em segundo lugar, agradeço a <strong>você</strong>, que dedicou um tempo para conhecer um pouco sobre o meu trabalho.
                 </p>
                 <div>
                     <h3>Tecnologias utilizadas neste <span>portfólio</span></h3>

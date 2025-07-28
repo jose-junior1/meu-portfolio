@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
+import { breakpoints } from "../../styles/responsive"
 
 
 export const Header = styled.header`
-    position: fixed;
-    z-index: 1;
-    top: 0;
+    position: relative;
     width: 100%;
-    background-color: rgba(27,27,27,0.1);
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    padding: 16px;
+
+    ${breakpoints.mobile`
+        justify-content: center;
+        background: rgba(20,20,20,0.95);
+    `}
 `
 
 export const Logo = styled.h1`
@@ -24,6 +25,11 @@ export const Logo = styled.h1`
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     letter-spacing: -3px;
+
+    ${breakpoints.mobile`
+        font-size: 32px;
+        left: 0;
+    `}
 `
 
 export const BtnBackToHome = styled(Link)`
@@ -42,7 +48,7 @@ export const BtnBackToHome = styled(Link)`
         transform: scale(1.05);
     }
 
-    img {
-        height: 36px;
-    }
+    ${breakpoints.mobile`
+        padding: 8px;
+    `}
 `

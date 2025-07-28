@@ -16,6 +16,14 @@ const Contato = () => {
                     (11) 99641-1760
                 </a>
                 <a
+                    href="https://wa.me/5511995937268"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src={wppIcon} alt="WhatsApp" />
+                    (11) 99593-7268
+                </a>
+                <a
                     href="mailto:jose.j.j.silva634@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"

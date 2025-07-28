@@ -1,33 +1,37 @@
 import { createGlobalStyle } from "styled-components";
 import bgImage from "../assets/img/background-front_end.jpg"
+import { breakpoints } from "./responsive";
 
 export const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
     }
 
     body {
         min-height: 100vh;
-        display: flex;
-        flex-direction: column;
         font-family: 'Inter', sans-serif;
     }
 
     body::before {
         content: "";
         position: fixed;
-        top: 0;
-        left: 0;
+        inset: 0;
         width: 100%;
         height: 100%;
         background-image: 
-            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
             url(${bgImage});
-        background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         z-index: -1;
+        background-attachment: scroll;
+
+        ${breakpoints.mobile`
+            background-attachment: scroll;
+        `}
     }
 
     a {

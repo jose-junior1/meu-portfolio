@@ -1,6 +1,6 @@
 import { BtnBackToHome, Header, Logo } from "./styles"
 
-export const Menu = () => {
+export const MenuProjetos = () => {
     return (
         <Header>
             <Logo>J <span>J</span></Logo>
@@ -11,4 +11,4 @@ export const Menu = () => {
     )
 }
 
-export default Menu
+export default MenuProjetos

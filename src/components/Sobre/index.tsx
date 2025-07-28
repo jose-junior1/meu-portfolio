@@ -14,7 +14,7 @@ const Sobre = () => {
                     <p>
                         Tenho formação em Análise e Desenvolvimento de Sistemas pela Universidade Anhembi Morumbi e estou me especializando em Engenharia Front-End pela EBAC, com foco em tecnologias como <span>React, TypeScript, JavaScript moderno, HTML, CSS</span> e <span>ferramentas de build</span>.
                     </p>
-                    <p>
+                    <p className="p-ocult">
                         Embora minha experiência profissional até agora tenha sido em outras áreas, venho me dedicando intensamente à transição para o desenvolvimento web. Estou sempre buscando novos desafios e oportunidades para crescer como desenvolvedor.
                     </p>
                     <p>

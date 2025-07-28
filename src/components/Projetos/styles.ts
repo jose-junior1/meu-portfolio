@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { breakpoints } from "../../styles/responsive";
 
 export const Container = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: rgba(0,0,0,0.6);
     color: #f1f1f1;
     position: relative;
-    overflow-y: auto;
+
+    ${breakpoints.mobile`
+        padding: 24px;
+    `}
 `
 
 export const Content = styled.div`
@@ -47,21 +51,30 @@ export const Card = styled.a`
     img {
         height: 30px;
     }
+
+    ${breakpoints.mobile`
+        width: 100%;
+        gap: 20px;
+
+        img {
+        }
+    `}
 `
 
 export const BtnProjects = styled(Link)`
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 20px;
-    margin-top: 20px;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+    gap: 30px;
     color: #fff;
-    background-color: #1d1d1dff;
+    background-color: #21613c;
     padding: 16px;
     border-radius: 10px;
+    width: 50%;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-    width: 260px;
-    text-align: center;
     border: 2px solid black;
 
     &:hover {
@@ -70,5 +83,16 @@ export const BtnProjects = styled(Link)`
 
     img {
         height: 36px;
+        position: absolute;
+        left: 16px;
     }
+
+    ${breakpoints.mobile`
+        width: 100%;
+        background-color: #21613c;
+        gap: 50px;
+
+        img {
+        }
+    `}
 `

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { breakpoints } from "../../styles/responsive";
 
 interface ImgContainerProps {
     type: "github" | "linkedin";
@@ -9,9 +10,14 @@ export const ContainerHome = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     min-height: 100vh;
     background-color: rgba(0,0,0,0.6);
+
+    ${breakpoints.mobile`
+        width: 100%;
+        padding: 24px;
+        height: 100%;
+    `}
 `
 
 export const Text = styled.div`
@@ -19,6 +25,10 @@ export const Text = styled.div`
         color: #b9b9b9ff;
         font-size: 24px;
         margin: 30px 0;
+
+        ${breakpoints.mobile`
+            font-size: 18px;
+        `}
     }
 `
 
@@ -33,7 +43,16 @@ export const InfoStack = styled.div`
     h2 {
         font-size: 64px;
         font-weight: 400;
+
+        ${breakpoints.mobile`
+            font-size: 48px;
+        `}
     }
+
+    ${breakpoints.mobile`
+        display: block;
+        width: 100%
+    `}
 `
 
 export const CardAvatar = styled.div`
@@ -64,6 +83,11 @@ export const CardAvatar = styled.div`
         border-left: none;
         border-top: none;
     }
+
+    ${breakpoints.mobile`
+        margin: 0 auto;
+        width: 100%
+    `}
 `
 
 export const Avatar = styled.img`
@@ -83,6 +107,13 @@ export const ListaIcons = styled.ul`
     li {
         width: 220px;
     }
+
+    ${breakpoints.mobile`
+        li {
+            width: auto;
+            padding-bottom: 30px;
+        }
+    `}
 `
 
 export const ImgContainer = styled.div<ImgContainerProps>`
@@ -90,13 +121,12 @@ export const ImgContainer = styled.div<ImgContainerProps>`
     gap: 30px;
     background-color: ${({ type }) =>
         type === "github" ? "#1b1b1bff" :
-        type === "linkedin" ? "#0d5381ff" :
+    type === "linkedin" ? "#0d5381ff" :
         "#ccc"};
     align-items: center;
     height: 64px;
     border-radius: 10px;
     transition: transform 0.2s ease-in-out;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     margin-top: 30px;
 
     &:hover {
@@ -107,4 +137,15 @@ export const ImgContainer = styled.div<ImgContainerProps>`
         color: #fff;
         letter-spacing: 5px;
     }
+
+    ${breakpoints.mobile`
+        padding: 16px;
+        background: none;
+
+        p {
+            display: none;
+            font-size: 14px;
+            letter-spacing: 5px;
+        }
+    `}
 `

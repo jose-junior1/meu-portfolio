@@ -1,14 +1,19 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/responsive";
 
 export const ContainerContato = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #1b1a1aff;
     color: #f1f1f1;
     text-align: center;
+
+    ${breakpoints.mobile`
+        padding: 24px;
+    `}
 `
 
 export const Content = styled.div`
@@ -39,4 +44,8 @@ export const Content = styled.div`
             width: 40px;
         }
     }
+
+    ${breakpoints.mobile`
+        width: 100%;
+    `}
 `

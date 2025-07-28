@@ -149,15 +149,15 @@ const ListagemProjetos = () => {
                     </p>
                     <img src={externalLink} alt="" />
                 </S.Card>
-                <BtnGitHub
-                    href="https://github.com/jose-junior1?tab=repositories"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Ver lista completa dos repositórios GitHub
-                    <img src={gitHubIcon} alt="GitHub" />
-                </BtnGitHub>
             </Content>
+            <BtnGitHub
+                href="https://github.com/jose-junior1?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Ver lista completa dos repositórios GitHub
+                <img src={gitHubIcon} alt="GitHub" />
+            </BtnGitHub>
         </Container>
     )
 }

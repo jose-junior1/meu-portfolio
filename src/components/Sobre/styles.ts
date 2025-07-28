@@ -1,13 +1,22 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/responsive";
 
 export const ContainerSobre = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-height: 100vh;
-    background-color: #1b1a1aff;
+    height: 100vh;
+    background-color: rgba(27, 26, 26, 1);
     color: #f1f1f1;
+    
+    ${breakpoints.mobile`
+        padding: 24px;
+
+        .p-ocult {
+            display: none;
+        }
+    `}
 `
 
 export const ContainerTexto = styled.div`

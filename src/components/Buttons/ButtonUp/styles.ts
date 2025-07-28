@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import styled from "styled-components";
+import { breakpoints } from "../../../styles/responsive";
 
 export const BtnUp = styled(Link)`
     position: fixed;
@@ -15,6 +16,7 @@ export const BtnUp = styled(Link)`
     right: 30px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    z-index: 2;
     
     &:hover {
         opacity: 0.8;
@@ -23,4 +25,11 @@ export const BtnUp = styled(Link)`
     img {
         height: 40px;
     }
+
+    ${breakpoints.mobile`
+        width: 40px;
+        height: 40px;
+        bottom: 70px;
+        right: 20px;
+    `}
 `

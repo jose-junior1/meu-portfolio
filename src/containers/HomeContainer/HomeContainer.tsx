@@ -11,7 +11,7 @@ import { Container } from "./ContainerStyle"
 const HomeContainer = () => {
     return (
         <Container>
-            <Menu />
+            <Menu mostrarMenu={false} mostrarDrop={true} />
             <Home />
             <Sobre />
             <Projetos />
