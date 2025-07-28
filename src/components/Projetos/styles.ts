@@ -21,6 +21,10 @@ export const Content = styled.div`
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
+
+    ${breakpoints.tablet`
+        width: 70%;
+    `}
 `
 
 export const ContainerCard = styled.div`

@@ -30,6 +30,11 @@ export const Logo = styled.h1`
         font-size: 32px;
         left: 0;
     `}
+
+    ${breakpoints.tablet`
+        font-size: 40px;
+        left: 0;
+    `}
 `
 
 export const BtnBackToHome = styled(Link)`

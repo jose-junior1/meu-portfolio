@@ -18,6 +18,12 @@ export const ContainerHome = styled.section`
         padding: 24px;
         height: 100%;
     `}
+
+    ${breakpoints.tablet`
+        width: 100%;
+        padding: 24px;
+        height: 100%;
+    `}
 `
 
 export const Text = styled.div`
@@ -53,6 +59,10 @@ export const InfoStack = styled.div`
         display: block;
         width: 100%
     `}
+
+    ${breakpoints.tablet`
+        display: block;
+    `}
 `
 
 export const CardAvatar = styled.div`
@@ -87,6 +97,10 @@ export const CardAvatar = styled.div`
     ${breakpoints.mobile`
         margin: 0 auto;
         width: 100%
+    `}
+
+    ${breakpoints.tablet`
+        margin: 50px auto 0 auto
     `}
 `
 

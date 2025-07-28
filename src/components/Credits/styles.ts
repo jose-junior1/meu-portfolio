@@ -44,6 +44,11 @@ export const ContainerText = styled.div`
             line-height: 20px;
         }
     `}
+
+    ${breakpoints.tablet`
+        width: 70%;
+        line-height: 50px;
+    `}
 `
 
 export const Citacao = styled.blockquote`

@@ -17,6 +17,12 @@ export const ContainerSobre = styled.section`
             display: none;
         }
     `}
+
+    ${breakpoints.tablet`
+        width: 100%;
+        line-height: 40px;
+        padding: 24px;
+    `}
 `
 
 export const ContainerTexto = styled.div`
@@ -58,6 +64,11 @@ export const ContainerTexto = styled.div`
         word-spacing: 6px;
         font-size: 18px;
     }
+
+    ${breakpoints.tablet`  
+        width: 100%;                                                                
+        padding: 24px;            
+    `}
 `
 
 export const BtnDownload = styled.a`

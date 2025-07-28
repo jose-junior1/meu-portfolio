@@ -36,6 +36,23 @@ export const BotaoHamburguer = styled.button<MenuProps>`
                 right: 10px;
         `}
     `}
+
+    ${breakpoints.tablet`
+        display: block;
+    `}
+
+    ${({ $aberto }: MenuProps) =>
+    breakpoints.tablet`
+        ${$aberto
+            ? css`
+                top: 16px;
+                right: 16px;
+            `
+            : css`
+                top: 16px;
+                right: 16px;
+        `}
+    `}
 `
 
 export const BotaoDropLeft = styled.button<MenuProps>`
@@ -61,6 +78,10 @@ export const BotaoDropLeft = styled.button<MenuProps>`
     }
 
     ${breakpoints.mobile`
+        display: none;
+    `}
+
+    ${breakpoints.tablet`
         display: none;
     `}
 `
@@ -93,6 +114,16 @@ export const MenuContainer = styled.nav<MenuProps>`
         justify-content: space-around;
         background: rgba(20,20,20,0.95);
     `}
+
+    ${breakpoints.tablet`
+        transform: ${({ $aberto }: MenuProps) => ($aberto ? 'translateY(0)' : 'translateY(-100%)')};
+        opacity: ${({ $aberto }: MenuProps) => ($aberto ? 1 : 0)};
+        pointer-events: ${({ $aberto }: MenuProps) => ($aberto ? 'auto' : 'none')};
+        width: 100%;
+        padding: 16px;
+        justify-content: space-around;
+        background: rgba(20,20,20,0.95);
+    `}
 `
 
 export const Logo = styled.h1<MenuProps>`
@@ -110,6 +141,11 @@ export const Logo = styled.h1<MenuProps>`
         top: 20px;
         font-size: 32px;
     `}
+
+    ${breakpoints.tablet`
+        top: 20px;
+        left: 20px;
+    `}
 `
 
 export const NavLinks = styled.ul`
@@ -122,6 +158,13 @@ export const NavLinks = styled.ul`
     }
 
     ${breakpoints.mobile`
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        text-align: center;
+    `}
+
+    ${breakpoints.tablet`
         flex-direction: column;
         padding-top: 40px;
         padding-bottom: 30px;

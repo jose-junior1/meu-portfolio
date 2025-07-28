@@ -54,6 +54,11 @@ export const Content = styled.div`
     ${breakpoints.mobile`
         display: block;
     `}
+
+    ${breakpoints.tablet`
+        width: 70%;
+        grid-template-columns: 1fr 1fr;
+    `}
 `
 
 export const BtnGitHub = styled.a`
