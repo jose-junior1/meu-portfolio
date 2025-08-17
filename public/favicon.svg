@@ -3,6 +3,6 @@
   <desc>Monograma GC minimalista: G verde ao lado do C branco, sobre fundo cinza-escuro.</desc>
 
   <!-- Letras GC lado a lado -->
-  <text x="2" y="48" font-family="Arial, Helvetica,  sans-serif" font-size="52" font-weight="bold" fill="#FFFFFF">J</text>
-  <text x="28" y="48" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="bold" fill="#00bfff">S</text>
+  <text x="10" y="48" font-family="Arial, Helvetica,  sans-serif" font-size="40" font-weight="bold" fill="#FFFFFF">J</text>
+  <text x="30" y="48" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="bold" fill="#00bfff">S</text>
 </svg>
