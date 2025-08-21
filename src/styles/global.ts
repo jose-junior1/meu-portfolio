@@ -61,4 +61,8 @@ export const GlobalStyle = createGlobalStyle`
         color: #00BCD4;
         font-weight: bold;
     }
+
+    .link-ativo {
+        color: #00BCD4;
+    }
 `

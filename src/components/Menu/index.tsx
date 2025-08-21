@@ -90,19 +90,64 @@ const Menu = ({ mostrarMenu, mostrarDrop } :Props) => {
                         </S.Logo>
                         <S.NavLinks>
                             <S.NavItem>
-                                <Link to='home' smooth={true} duration={500} onClick={closeMenu}>Home</Link>
+                                <Link 
+                                    to='home'
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={closeMenu}
+                                    spy={true}
+                                    activeClass="link-ativo"
+                                >
+                                    Home
+                                </Link>
                             </S.NavItem>
                             <S.NavItem>
-                                <Link to="sobre" smooth={true} duration={500} onClick={closeMenu}>Sobre</Link>
+                                <Link
+                                    to="sobre"
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={closeMenu}
+                                    spy={true}
+                                    activeClass="link-ativo"
+                                >
+                                    Sobre
+                                </Link>
                             </S.NavItem>
                             <S.NavItem>
-                                <Link to='projetos' smooth={true} duration={500} onClick={closeMenu}>Projetos</Link>
+                                <Link
+                                    to='projetos'
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={closeMenu}
+                                    spy={true}
+                                    activeClass="link-ativo"
+                                >
+                                    Projetos
+                                </Link>
                             </S.NavItem>
                             <S.NavItem>
-                                <Link to='contato' smooth={true}duration={500} onClick={closeMenu}>Contato</Link>
+                                <Link
+                                    to='contato'
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={closeMenu}
+                                    spy={true}
+                                    activeClass="link-ativo"
+                                >
+                                    Contato
+                                </Link>
                             </S.NavItem>
                             <S.NavItem>
-                                <Link to='creditos' smooth={true}duration={500} onClick={closeMenu}>Créditos</Link>
+                                <Link
+                                    to='creditos'
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={closeMenu}
+                                    spy={true}
+                                    activeClass="link-ativo"
+                                >
+                                    Créditos
+                                </Link>
                             </S.NavItem>
                         </S.NavLinks>
                     </>
