@@ -10,6 +10,16 @@ const ListagemProjetos = () => {
                 <h2>Todos os Projetos</h2>
             <Content>
                 <S.Card
+                    href="https://efood-six-pearl.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >
+                    <p>
+                        eFood - e-commerce de restaurantes <i>(Em andamento)</i>
+                    </p>
+                    <img src={externalLink} alt="Link" />
+                </S.Card>
+                <S.Card
                     href="https://minhastarefas-lac.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"

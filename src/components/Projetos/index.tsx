@@ -18,12 +18,12 @@ const Projetos = () => {
                     <img src={externalLink} alt="Link" />
                 </Card>
                 <Card
-                    href="https://webpousada.vercel.app/"
+                    href="https://efood-six-pearl.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                 >
                     <p>
-                        Pousada Secreta - A pousada reservada em Angra dos Reis
+                        eFood - e-commerce de restaurantes <i>(Em andamento)</i>
                     </p>
                     <img src={externalLink} alt="Link" />
                 </Card>
