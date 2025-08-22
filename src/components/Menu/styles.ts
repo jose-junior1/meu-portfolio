@@ -87,6 +87,7 @@ export const BotaoDropLeft = styled.button<MenuProps>`
 `
 
 export const MenuContainer = styled.nav<MenuProps>`
+    box-sizing: border-box;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -151,6 +152,7 @@ export const Logo = styled.h1<MenuProps>`
 export const NavLinks = styled.ul`
     display: flex;
     gap: 30px;
+    padding: 16px 0;
     cursor: pointer;
 
     &:last-child {

@@ -9,6 +9,7 @@ export const Header = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 
     ${breakpoints.mobile`
         justify-content: center;
@@ -38,13 +39,10 @@ export const Logo = styled.h1`
 `
 
 export const BtnBackToHome = styled(Link)`
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 16px;
     color: #fff;
     background-color: #008080;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding: 16px;
     cursor: pointer;
     transition: transform 0.4s ease-in-out;
     text-align: center;
@@ -55,5 +53,9 @@ export const BtnBackToHome = styled(Link)`
 
     ${breakpoints.mobile`
         padding: 8px;
+    `}
+
+    ${breakpoints.tablet`
+        padding: 16px;
     `}
 `
