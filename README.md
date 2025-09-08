@@ -23,8 +23,6 @@ Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvid
 - [React Router DOM](https://reactrouter.com/)
 - [Styled-components](https://styled-components.com/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
-- HTML5 + CSS3
-- Deploy via Vercel
 
 ---
 
@@ -36,13 +34,16 @@ meu-portfolio/
 ├── src/
 │   ├── assets/              # Logos e imagens
 │   ├── components/          # Componentes reutilizáveis (Home, Footer, Menu, etc.)
+|   ├── containers/          # Containers que englobam componentes
 │   ├── pages/               # Páginas Home e Projetos
 │   ├── styles/              # Estilos globais e breakpoints responsivos
 │   ├── App.tsx              # Definição das rotas
-│   └── main.tsx             # Ponto de entrada do app
+│   └── index.tsx            # Ponto de entrada do app
 ├── .gitignore
-├── README.md
+└── package-lock.json
 └── package.json
+└── README.md
+└── tsconfig.json
 ```
 
 ---
@@ -80,14 +81,14 @@ cd meu-portfolio
 ## 📄 Currículo
 Meu currículo pode ser visualizado ou baixado através do link abaixo:
 
-👉 [Ver Currículo PDF no Google Drive](https://drive.google.com/file/d/15KV4bFlSnEkN96nv_scYoDr5KKhtA2Sa/view?usp=drivesdk)
+👉 [Ver Currículo PDF no Google Drive](https://drive.google.com/file/d/1x4Zmd_sc_ANA9DGYsEd7DWPfiS39gnFg/view)
 
 ---
 
 ## 🚀 Deploy
-Este portfólio está hospedado gratuitamente via GitHub Pages:
+Este portfólio está hospedado gratuitamente via Vercel:
 
-🌍 https://jose-junior1.github.io/meu-portfolio/
+🌍 https://portfoliojosejuniordev.vercel.app/
 
 ---
 
