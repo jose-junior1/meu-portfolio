@@ -1,6 +1,8 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
+
+import { breakpoints } from "./responsive"
+
 import bgImage from "../assets/img/background-front_end.jpg"
-import { breakpoints } from "./responsive";
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -8,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         -webkit-tap-highlight-color: transparent;
+        list-style: none;
     }
 
     body {

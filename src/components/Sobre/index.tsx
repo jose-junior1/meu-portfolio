@@ -22,7 +22,7 @@ const Sobre = () => {
                     </p>
                 </div>
                 <BtnDownload
-                    href="https://drive.google.com/file/d/1x4Zmd_sc_ANA9DGYsEd7DWPfiS39gnFg/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1ga6olR06CauguZuwlSRW2cjYH0FKBz-m/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

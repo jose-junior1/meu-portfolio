@@ -46,18 +46,17 @@ export const Container = styled.section`
 export const Content = styled.div`
     display: grid;
     gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1024px;
     width: 100%;
 
     ${breakpoints.mobile`
-        display: block;
+        grid-template-columns: 1fr;
     `}
 
     ${breakpoints.tablet`
         width: 70%;
-        grid-template-columns: 1fr 1fr;
     `}
 `
 

@@ -22,46 +22,17 @@ export const Content = styled.div`
     max-width: 800px;
     width: 100%;
 
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
     ${breakpoints.tablet`
         width: 70%;
-    `}
-`
-
-export const ContainerCard = styled.div`
-    overflow: hidden;
-`
-
-export const Card = styled.a`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1b1a1aff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-    border: 1px solid transparent;
-    
-    &:hover {
-        transform: scale(1.02);
-        border: 1px solid #00BCD4;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
-    img {
-        height: 30px;
-    }
-
-    ${breakpoints.mobile`
-        width: 100%;
-        gap: 20px;
-
-        img {
-        }
     `}
 `
 

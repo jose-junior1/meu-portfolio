@@ -1,48 +1,33 @@
-import { BtnProjects, Card, Container, Content } from "./styles"
-import externalLink from "../../assets/img/icons/external-link.png"
-import project from "../../assets/img/icons/project.png"
+import projects from "../../mocks/Projects"
+import CardProjects from "../CardProjects"
+
+import projectIcon from "../../assets/img/icons/project.png"
+
+import * as S from "./styles"
 
 const Projetos = () => {
     return (
-        <Container id="projetos">
-            <Content>
+        <S.Container id="projetos">
+            <S.Content>
                 <h2>Projetos</h2>
-                <Card
-                    href="https://minhastarefas-lac.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-                    <p>
-                        Minhas Tarefas — App de Gestão com React + Redux
-                    </p>
-                    <img src={externalLink} alt="Link" />
-                </Card>
-                <Card
-                    href="https://efood-six-pearl.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-                    <p>
-                        eFood - e-commerce de restaurantes <i>(Em andamento)</i>
-                    </p>
-                    <img src={externalLink} alt="Link" />
-                </Card>
-                <Card
-                    href="https://recanto-dos-livros.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-                    <p>
-                        Recanto dos Livros — Uma livraria espetacular
-                    </p>
-                    <img src={externalLink} alt="Link" />
-                </Card>
-                <BtnProjects to='/projetos'>
-                    <img src={project} alt="Projetos" />
+                <ul>
+                    {projects.slice(0, 3).map((project) => (
+                        <CardProjects
+                            key={project.id}
+                            title={project.title}
+                            img={project.img}
+                            isDevelopment={project.isDevelopment}
+                            target={project.target}
+                            id={project.id}
+                        />
+                    ))}
+                </ul>
+                <S.BtnProjects to='/projetos'>
+                    <img src={projectIcon} alt="Projetos" />
                     Todos os projetos
-                </BtnProjects>
-            </Content>
-        </Container>
+                </S.BtnProjects>
+            </S.Content>
+        </S.Container>
     )
 }
 
