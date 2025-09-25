@@ -4,7 +4,7 @@ export const MenuProjetos = () => {
     return (
         <Header>
             <Logo>J <span>J</span></Logo>
-            <BtnBackToHome to='/'>
+            <BtnBackToHome to='/' title="Voltar para a página inicial">
                 Voltar para a página inicial
             </BtnBackToHome>
         </Header>

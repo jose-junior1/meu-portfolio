@@ -8,10 +8,9 @@ export const Card = styled.div`
     max-width: 500px;
     width: 100%;
     height: 180px;
-    border-radius: 8px;
-    cursor: pointer;
+    border-radius: 10px;
     transition: transform 0.2s ease-in-out;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 1);
     position: relative;
     
     &::before {
@@ -26,13 +25,31 @@ export const Card = styled.div`
     
     &:hover {
         transform: scale(1.02);
-        border: 1px solid #00BCD4;
+        border-color: #00BCD4;
     }
     
     .banner {
         width: 200px;
     }
-    `
+
+    ${breakpoints.mobile`
+        border: none;
+
+        &:hover {
+            border-color: none;
+            transform: none;
+        }
+    `}
+
+    ${breakpoints.tablet`
+        border: none;
+        
+        &:hover {
+            border-color: none;
+            transform: none;
+        }
+    `}
+`
 
 export const CardLink = styled.a`
     position: absolute;
@@ -44,6 +61,8 @@ export const CardLink = styled.a`
     justify-content: space-between;
     padding: 8px 16px;
     background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0 0 8px 8px;
+    cursor: pointer;
 
     p {
         font-size: 1em;

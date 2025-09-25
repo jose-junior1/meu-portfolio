@@ -12,7 +12,7 @@ const Home = () => {
                         <p>Desenvolvedor Web Front-End</p>
                     </Text>
                     <ListaIcons>
-                        <li>
+                        <li title="Veja meus repositórios no GitHub">
                             <a
                                 href="https://github.com/jose-junior1"
                                 target="_blank"
@@ -24,7 +24,7 @@ const Home = () => {
                                 </ImgContainer>
                             </a>
                         </li>
-                        <li>
+                        <li title="Visite meu LinkedIn">
                             <a
                                 href="https://www.linkedin.com/in/josejunior-dev"
                                 target="_blank"

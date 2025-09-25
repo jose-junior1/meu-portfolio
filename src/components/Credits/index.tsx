@@ -15,6 +15,7 @@ const Credits = () => {
                             href="https://react.dev/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="React"
                         >
                             <img className="react" src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg' alt="Logo React" />
                         </a>
@@ -22,6 +23,7 @@ const Credits = () => {
                             href="https://www.typescriptlang.org/docs/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="TypeScript"
                         >
                             <img className="ts" src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg' alt="Logo TypeScript" />
                         </a>
@@ -29,6 +31,7 @@ const Credits = () => {
                             href="https://styled-components.com/docs"
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="Styled-components"
                         >
                             <img className="styled-icon" src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/styledcomponents/styledcomponents-original-wordmark.svg' alt="Logo Styled Components" />
                         </a>
@@ -36,6 +39,7 @@ const Credits = () => {
                             href="https://reactrouter.com/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="React Router DOM"
                         >
                             <img className="react-router" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original-wordmark.svg" alt="Logo React Router" />
                         </a>
@@ -43,6 +47,7 @@ const Credits = () => {
                             href="https://www.npmjs.com/package/react-scroll"
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="React Scroll"
                         >
                             <p className="react-scroll">
                             <span className="firstName">React</span>
@@ -53,6 +58,7 @@ const Credits = () => {
                             href="https://git-scm.com/doc"
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="Git"
                         >
                             <img className="git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg" alt="Logo Git" />
                         </a>

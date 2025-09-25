@@ -12,7 +12,7 @@ const Sobre = () => {
                         Olá! Me chamo <span>José Junior</span> e sou um desenvolvedor front-end apaixonado por tecnologia, design e boas experiências de usuário.
                     </p>
                     <p>
-                        Tenho formação em Análise e Desenvolvimento de Sistemas pela Universidade Anhembi Morumbi e estou me especializando em Engenharia Front-End pela EBAC, com foco em tecnologias como <span>React, TypeScript, JavaScript moderno, HTML, CSS</span> e <span>ferramentas de build</span>.
+                        Tenho formação em Análise e Desenvolvimento de Sistemas pela Universidade Anhembi Morumbi e especializado em Engenharia Front-End pela EBAC, com foco em tecnologias como <span>React, TypeScript, JavaScript moderno, HTML, CSS</span> e <span>ferramentas de build</span>.
                     </p>
                     <p className="p-ocult">
                         Embora minha experiência profissional até agora tenha sido em outras áreas, venho me dedicando intensamente à transição para o desenvolvimento web. Estou sempre buscando novos desafios e oportunidades para crescer como desenvolvedor.
@@ -22,9 +22,10 @@ const Sobre = () => {
                     </p>
                 </div>
                 <BtnDownload
-                    href="https://drive.google.com/file/d/1ga6olR06CauguZuwlSRW2cjYH0FKBz-m/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1hFffTPOQIOw-qatqwm1iFcFNfm5bDiiT/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="Visualizar currículo e baixar"
                 >
                     <img src={downloadIcon} alt="Baixar" />
                     Download CV

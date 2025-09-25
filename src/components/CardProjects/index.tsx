@@ -6,7 +6,7 @@ import * as S from './styles'
 
 const CardProjects = ({ title, target, img, isDevelopment }: Project) => {
     return (
-        <S.Card style={{backgroundImage: `url(${img})`}}>
+        <S.Card style={{backgroundImage: `url(${img})`}} title={`${title}`}>
             <S.CardLink
                 href={target}
                 target="_blank"

@@ -30,32 +30,9 @@ export const ContainerTexto = styled.div`
     width: 100%;
     margin: 0 auto;
     text-align: justify;
-    
+
     div {
-        position: relative;
-        padding: 24px;
-        
-        &::before, &::after {
-            content: '';
-            position: absolute;
-            width: 80px; 
-            height: 80px;
-            border: 2px solid #00BCD4;
-        }
-        
-        &::before {
-            top: 0;
-            left: 0;
-            border-right: none;
-            border-bottom: none;
-        }
-        
-        &::after {
-            bottom: 0;
-            right: 0;
-            border-left: none;
-            border-top: none;
-        }
+        padding: 50px 0;
     }
 
     p {
@@ -68,6 +45,10 @@ export const ContainerTexto = styled.div`
     ${breakpoints.tablet`  
         width: 100%;                                                                
         padding: 24px;            
+    `}
+
+    ${breakpoints.mobile`
+        text-align: left;
     `}
 `
 

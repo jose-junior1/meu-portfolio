@@ -73,8 +73,8 @@ export const BotaoDropLeft = styled.button<MenuProps>`
 
     &:hover {
         transform: scale(1.04);
-        border-color: #00BFFF;
-        color: #00BFFF;
+        border-color: #00BCD4;
+        color: #00BCD4;
     }
 
     ${breakpoints.mobile`
@@ -181,6 +181,6 @@ export const NavItem = styled.li`
 
     &:hover {
         transform: scale(1.1);
-        color: #00BFFF;
+        color: #00BCD4;
     }
 `

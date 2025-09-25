@@ -65,6 +65,7 @@ const Menu = ({ mostrarMenu, mostrarDrop } :Props) => {
                 $aberto={menuHambAberto}
                 onClick={mostrarIcone}
                 aria-label={menuHambAberto ? 'Fechar menu' : 'Abrir menu'}
+                title={menuHambAberto ? 'Fechar menu' : 'Abrir menu'}
             >
                 {mostrarX ? 'X' : '☰'}
             </S.BotaoHamburguer>
@@ -73,6 +74,7 @@ const Menu = ({ mostrarMenu, mostrarDrop } :Props) => {
                 $aberto={menuDrop}
                 onClick={mostrarSetaIcone}
                 aria-label={menuDrop ? 'Fechar menu' : 'Abrir menu'}
+                title={menuDrop ? 'Fechar menu' : 'Abrir menu'}
             >
                 {mostrarArrow ? '>' : '<'}
             </S.BotaoDropLeft>
@@ -97,6 +99,7 @@ const Menu = ({ mostrarMenu, mostrarDrop } :Props) => {
                                     onClick={closeMenu}
                                     spy={true}
                                     activeClass="link-ativo"
+                                    title="Home"
                                 >
                                     Home
                                 </Link>
@@ -109,6 +112,7 @@ const Menu = ({ mostrarMenu, mostrarDrop } :Props) => {
                                     onClick={closeMenu}
                                     spy={true}
                                     activeClass="link-ativo"
+                                    title="Sobre"
                                 >
                                     Sobre
                                 </Link>
@@ -121,6 +125,7 @@ const Menu = ({ mostrarMenu, mostrarDrop } :Props) => {
                                     onClick={closeMenu}
                                     spy={true}
                                     activeClass="link-ativo"
+                                    title="Projetos"
                                 >
                                     Projetos
                                 </Link>
@@ -133,6 +138,7 @@ const Menu = ({ mostrarMenu, mostrarDrop } :Props) => {
                                     onClick={closeMenu}
                                     spy={true}
                                     activeClass="link-ativo"
+                                    title="Contato"
                                 >
                                     Contato
                                 </Link>
@@ -145,6 +151,7 @@ const Menu = ({ mostrarMenu, mostrarDrop } :Props) => {
                                     onClick={closeMenu}
                                     spy={true}
                                     activeClass="link-ativo"
+                                    title="Créditos"
                                 >
                                     Créditos
                                 </Link>

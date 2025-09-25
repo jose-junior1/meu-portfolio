@@ -22,7 +22,7 @@ const Projetos = () => {
                         />
                     ))}
                 </ul>
-                <S.BtnProjects to='/projetos'>
+                <S.BtnProjects to='/projetos' title="Ver todos os projetos">
                     <img src={projectIcon} alt="Projetos" />
                     Todos os projetos
                 </S.BtnProjects>

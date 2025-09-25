@@ -25,6 +25,7 @@ const ListagemProjetos = () => {
                 href="https://github.com/jose-junior1?tab=repositories"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Ver lista completa dos repositórios GitHub"
             >
                 Ver lista completa dos repositórios GitHub
                 <img src={gitHubIcon} alt="GitHub" />

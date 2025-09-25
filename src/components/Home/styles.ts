@@ -66,37 +66,15 @@ export const InfoStack = styled.div`
 `
 
 export const CardAvatar = styled.div`
-    position: relative;
     padding: 16px;
     width: 300px;
     height: 300px;
     border-radius: 8px;
 
-    &::after, &::before {
-        position: absolute;
-        border: 3px solid #00d9ffff;
-        height: 100px;
-        width: 100px;
-        content: '';
-    }
-
-    &::before {
-        top: 0;
-        left: 0;
-        border-right: none;
-        border-bottom: none;
-    }
-
-    &::after {
-        bottom: 0;
-        right: 0;
-        border-left: none;
-        border-top: none;
-    }
-
     ${breakpoints.mobile`
         margin: 0 auto;
-        width: 100%
+        width: 90%;
+        height: 90%;
     `}
 
     ${breakpoints.tablet`
@@ -110,7 +88,7 @@ export const Avatar = styled.img`
     object-fit: cover;
     position: relative;
     z-index: 0;
-    border-radius: 8px;
+    border-radius: 50%;
 `
 
 export const ListaIcons = styled.ul`

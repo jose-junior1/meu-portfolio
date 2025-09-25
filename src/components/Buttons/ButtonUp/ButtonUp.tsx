@@ -3,7 +3,7 @@ import { BtnUp } from './styles'
 
 const ButtonUp = () => {
     return (
-        <BtnUp to='home' smooth={true} duration={500}>
+        <BtnUp to='home' smooth={true} duration={500} title='Subir'>
             <img src={btnUp} alt="Subir" />
         </BtnUp>
     )

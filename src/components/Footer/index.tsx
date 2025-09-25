@@ -13,6 +13,7 @@ const Rodape = () => {
                 href="https://wa.me/5511996411760"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Conversar no Whatsapp"
             >
                 <img src={wppIcon} alt="Ícone WhatsApp" />
             </a>
@@ -20,6 +21,7 @@ const Rodape = () => {
                 href="https://github.com/jose-junior1"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Veja meus repositórios no GitHub"
             >
                 <img src={gitHubIcon} alt="Ícone GitHub" />
             </a>
@@ -27,6 +29,7 @@ const Rodape = () => {
                 href="https://www.linkedin.com/in/josejunior-dev"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Visite meu LinkedIn"
             >
                 <img src={linkedinIcon} alt="Ícone LinkedIn" />
             </a>
