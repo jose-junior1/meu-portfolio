@@ -22,7 +22,7 @@ const Sobre = () => {
                     </p>
                 </div>
                 <BtnDownload
-                    href="https://drive.google.com/file/d/1hFffTPOQIOw-qatqwm1iFcFNfm5bDiiT/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1Sx53yHAkoOzXe2KvRPPze6bD2PO7pkUA/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Visualizar currículo e baixar"
