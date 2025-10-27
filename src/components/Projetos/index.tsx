@@ -1,4 +1,4 @@
-import projects from "../../mocks/Projects"
+import projects from "../../data/Projects"
 import CardProjects from "../CardProjects"
 
 import projectIcon from "../../assets/img/icons/project.png"
@@ -17,8 +17,10 @@ const Projetos = () => {
                             title={project.title}
                             img={project.img}
                             isDevelopment={project.isDevelopment}
+                            isRefactored={project.isRefactored}
                             target={project.target}
                             id={project.id}
+                            stacks={project.stacks}
                         />
                     ))}
                 </ul>

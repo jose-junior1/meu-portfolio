@@ -1,4 +1,4 @@
-import projects from "../../mocks/Projects"
+import projects from "../../data/Projects"
 import CardProjects from "../CardProjects"
 
 import gitHubIcon from "../../assets/img/icons/github64.png"
@@ -16,8 +16,10 @@ const ListagemProjetos = () => {
                         title={project.title}
                         img={project.img}
                         isDevelopment={project.isDevelopment}
+                        isRefactored={project.isRefactored}
                         target={project.target}
                         id={project.id}
+                        stacks={project.stacks}
                     />
                 ))}
             </S.Content>
