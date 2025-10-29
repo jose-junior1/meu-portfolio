@@ -17,8 +17,6 @@ const CardProjects = ({ title, target, img, isDevelopment, isRefactored, stacks 
         setTimeout(() => setAnimationState('hidden'), 400)
     }
 
-    console.log(animationState)
-
     return (
         <S.Card style={{ backgroundImage: `url(${img})` }} title={`${title}`}>
             <S.CardLink
