@@ -11,7 +11,7 @@ const Form = () => {
     const [loading, setLoading] = useState(false)
 
     const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID
-    const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
     const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -39,23 +39,23 @@ const Form = () => {
             templateParams,
             PUBLIC_KEY
         )
-        .then(() => {
-            setSuccessfulMessage('Mensagem enviada com sucesso! Em breve responderei.')
-            setName('')
-            setEmail('')
-            setTextMessage('')
-        })
-        .catch(() => {
-            setSuccessfulMessage('Erro ao enviar mensagem. Por favor tente novamente ou use o cartão do WhatsApp.')
-        })
-        .finally(() => {
-            setLoading(false)
-        })
+            .then(() => {
+                setSuccessfulMessage('Mensagem enviada com sucesso! Em breve responderei.')
+                setName('')
+                setEmail('')
+                setTextMessage('')
+            })
+            .catch(() => {
+                setSuccessfulMessage('Erro ao enviar mensagem. Por favor tente novamente ou use o cartão do WhatsApp.')
+            })
+            .finally(() => {
+                setLoading(false)
+            })
     }
     return (
         <S.FormContact onSubmit={handleSubmit}>
             <S.BlockContact>
-                <label htmlFor="name">Nome *</label>
+                <label htmlFor="name">Nome<b>*</b></label>
                 <input
                     id="name"
                     type="text"
@@ -67,7 +67,7 @@ const Form = () => {
                 />
             </S.BlockContact>
             <S.BlockContact>
-                <label htmlFor="email">E-mail *</label>
+                <label htmlFor="email">E-mail<b>*</b></label>
                 <input
                     id="email"
                     type="email"
@@ -79,7 +79,7 @@ const Form = () => {
                 />
             </S.BlockContact>
             <S.BlockContact>
-                <label htmlFor="text-message">Mensagem*</label>
+                <label htmlFor="text-message">Mensagem<b>*</b></label>
                 <textarea
                     id="text-message"
                     placeholder="Insira sua mensagem aqui"

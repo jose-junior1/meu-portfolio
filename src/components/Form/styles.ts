@@ -52,6 +52,10 @@ export const BlockContact = styled.div`
     gap: 10px;
     text-align: left;
 
+    b {
+        color: red;
+    }
+
     input,
     textarea {
         border-radius: 6px;
