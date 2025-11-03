@@ -2,6 +2,7 @@ import * as S from "./styles"
 import wppIcon from "../../assets/img/icons/wpp.png"
 import mailIcon from "../../assets/img/icons/mail.png"
 import { useState } from "react"
+import Form from "../Form"
 
 const Contato = () => {
     const [activeView, setActiveView] = useState<'form' | 'cards'>('form')
@@ -42,35 +43,7 @@ const Contato = () => {
                 </div>
             </S.SelectFormContact>
             {activeView === 'form' ? (
-                <S.FormContact>
-                    <S.BlockContact>
-                        <label htmlFor="name">Nome *</label>
-                        <input
-                            id="name"
-                            type="text"
-                            placeholder="Insira seu nome"
-                            required
-                        />
-                    </S.BlockContact>
-                    <S.BlockContact>
-                        <label htmlFor="email">E-mail *</label>
-                        <input
-                            id="email"
-                            type="email"
-                            placeholder="Insira seu e-mail ex.: exemplo@gmail.com"
-                            required
-                        />
-                    </S.BlockContact>
-                    <S.BlockContact>
-                        <label htmlFor="text-message">Mensagem*</label>
-                        <textarea
-                            id="text-message"
-                            placeholder="Insira sua mensagem aqui"
-                            required
-                        />
-                    </S.BlockContact>
-                    <button type="submit">Enviar</button>
-                </S.FormContact>
+                <Form />
             ) : (
                 <S.Content>
                     <a
