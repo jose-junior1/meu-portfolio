@@ -95,9 +95,9 @@ const Form = () => {
                 <small className='success-message'>{successfulMessage}</small>
             )}
             {loading ? (
-                <button className='disabled' type="submit" disabled>Enviar</button>
+                <button className='disabled' type="submit" title='Enviando mensagem...' disabled>Enviando...</button>
             ) : (
-                <button type="submit">Enviar</button>
+                <button type="submit" title='Clique para enviar sua mensagem'>Enviar</button>
             )}
         </S.FormContact>
     )

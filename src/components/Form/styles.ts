@@ -21,12 +21,12 @@ export const FormContact = styled.form`
         height: 32px;
         width: 100%;
         border-radius: 6px;
-        background-color: #21613c;
+        background-color: #017786ff;
         color: #f1f1f1;
         border: 1px solid transparent;
 
         &:hover {
-            border-color: #21613c;
+            border-color: #017786ff;
             background-color: transparent;
         }
 
@@ -35,7 +35,7 @@ export const FormContact = styled.form`
 
             &:hover {
                 border: none;
-                background-color: #21613c;
+                background-color: #017786ff;
             }
         `}
     }
@@ -58,20 +58,20 @@ export const BlockContact = styled.div`
 
     input,
     textarea {
-        border-radius: 6px;
         outline: none;
     }
-
+    
     input:focus,
     textarea:focus {
         border-color: #00BCD4;
     }
-
+    
     input {
         height: 32px;
         padding: 0 16px;
         border: none;
         border-bottom: 2px solid #c1c1c1;
+        border-radius: 6px 6px 0 0;
         background-color: #2b2929ff;
         color: #c5c5c5;
         font-size: 18px;
@@ -90,6 +90,7 @@ export const BlockContact = styled.div`
         background-color: #2b2929ff;
         color: #c5c5c5;
         border: 1px solid #c1c1c1;
+        border-radius: 6px;
 
         ${breakpoints.mobile`
             max-height: 180px;
