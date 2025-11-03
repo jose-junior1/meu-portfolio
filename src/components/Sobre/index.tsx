@@ -23,13 +23,10 @@ const Sobre = () => {
                 </div> */}
                 <div>
                     <p>
-                        Olá! Me chamo <span>José Junior</span> e sou um Desenvolvedor Front-End com ênfase na construção de SPAs (Single Page Applications) robustas com <span>React, TypeScript e Redux</span>.
+                        Olá! Me chamo <span>José Junior</span> e sou um Desenvolvedor Front-End com ênfase na construção de SPAs (Single Page Applications) robustas com <span>React, TypeScript e Styled-components</span>.
                     </p>
                     <p>
-                        Minha experiência é focada em transformar designs (Figma) em aplicações de alta performance. Em meus projetos, <span>adaptei e expandi</span> uma arquitetura de estado (<span>RTK Query</span>), implementando fluxos de checkout complexos (como a máquina de estados de 4 etapas do EFOOD) com <span>Formik/Yup</span> e integração com <span>APIs RESTful</span>.
-                    </p>
-                    <p>
-                        Recentemente, adicionei uma camada de qualidade profissional, implementando suítes de <span>testes E2E com Cypress</span> e gerando relatórios (Mochawesome) para garantir zero regressões nos fluxos críticos de compra.
+                        Minha experiência é focada em transformar designs em aplicações de alta performance. Em meus projetos, <span>adaptei e expandi</span> uma arquitetura de estado (<span>RTK Query</span>), implementando fluxos de checkout complexos (como a máquina de estados de 4 etapas do EFOOD) com <span>Formik/Yup</span> e integração com <span>APIs RESTful</span>.
                     </p>
                     <p>
                         Com formação em Análise de Sistemas e especialização em Engenharia Front-End (EBAC), busco <span>oportunidades (CLT ou PJ)</span> para aplicar meu conhecimento em produtos desafiadores.
