@@ -1,37 +1,16 @@
-import { Outlet, createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider } from "react-router-dom"
 
-import { GlobalStyle } from "./styles/global";
-import Home from "./pages/Home";
-import Projetos from "./pages/Projetos";
-import ScrollToTop from "./components/ScrollToTop";
+import router from "./routes"
+
+import { GlobalStyle } from "./styles/global"
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <RouterProvider router={rotas} />
-    </>
-  );
-}
-
-function Root() {
-  return (
-    <>
-      <ScrollToTop />
-      <Outlet />
+      <RouterProvider router={router} />
     </>
   )
 }
-
-const rotas = createBrowserRouter([
-  {
-    path: '/',
-    element: <Root />,
-    children: [
-      { path: '/', element: <Home /> },
-      { path: '/projetos', element: <Projetos /> },
-    ],
-  },
-]);
 
 export default App;

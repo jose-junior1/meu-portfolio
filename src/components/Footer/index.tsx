@@ -1,11 +1,12 @@
-import { RodapeContainer, Logo } from "./styles"
 import gitHubIcon from "../../assets/img/icons/github64.png"
 import linkedinIcon from "../../assets/img/icons/linkedin64.png"
 import wppIcon from "../../assets/img/icons/whatsapp.png"
 
-const Rodape = () => {
+import { Container, Logo } from "./styles"
+
+const Footer = () => {
     return (
-        <RodapeContainer>
+        <Container>
             <Logo>
                 J <span>J</span>
             </Logo>
@@ -33,8 +34,8 @@ const Rodape = () => {
             >
                 <img src={linkedinIcon} alt="Ícone LinkedIn" />
             </a>
-        </RodapeContainer>
+        </Container>
     )
 }
 
-export default Rodape
+export default Footer

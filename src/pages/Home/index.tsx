@@ -1,9 +1,9 @@
 import HomeContainer from "../../containers/HomeContainer/HomeContainer"
 
-const Home = () => {
+const HomePage = () => {
     return (
         <HomeContainer />
     )
 }
 
-export default Home
+export default HomePage

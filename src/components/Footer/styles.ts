@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { breakpoints } from "../../styles/responsive";
 
-export const RodapeContainer = styled.footer`
+export const Container = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;

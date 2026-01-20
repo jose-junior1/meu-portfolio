@@ -38,6 +38,11 @@ export const FormContact = styled.form`
                 background-color: #017786ff;
             }
         `}
+
+        ${breakpoints.tablet`
+            padding: 16px;
+            height: auto;
+        `}
     }
 
     .disabled {
@@ -46,6 +51,7 @@ export const FormContact = styled.form`
 `
 
 export const BlockContact = styled.div`
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -75,6 +81,10 @@ export const BlockContact = styled.div`
         background-color: #2b2929ff;
         color: #c5c5c5;
         font-size: 18px;
+
+        &.input-error {
+            border-color: red;
+        }
     }
 
     textarea {
@@ -99,5 +109,17 @@ export const BlockContact = styled.div`
         ${breakpoints.tablet`
             max-height: 220px;
         `}
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .error-message {
+        margin: 0;
+        color: red;
+        text-align: center;
     }
 `
