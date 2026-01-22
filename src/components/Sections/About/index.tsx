@@ -19,7 +19,7 @@ const Sobre = () => {
                     </p>
                 </div>
                 <DownloadButton
-                    href="https://drive.google.com/file/d/1Sx53yHAkoOzXe2KvRPPze6bD2PO7pkUA/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/11ASKJVkqAld9hHHSIr13D_f_e7F-aUgl/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Visualizar currículo e baixar"
