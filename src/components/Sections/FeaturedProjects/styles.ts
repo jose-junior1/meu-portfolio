@@ -7,7 +7,9 @@ export const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100dvh;
+    height: auto;
+    padding: 100px 0;
     background-color: rgba(0,0,0,0.6);
     color: #f1f1f1;
     position: relative;

@@ -42,19 +42,22 @@ const CardProjects = ({ title, target, img, isDevelopment, isRefactored, stacks 
             >
                 Ver Stacks
             </S.StackButton>
+            {animationState === 'visible' && 
+                <S.CloseButton
+                    type='button'
+                    onClick={hiddenSkills}
+                    title='Ocultar stacks'
+                >
+                    X
+                </S.CloseButton>
+    
+            }
             <S.Stacks className={animationState}>
                 {stacks.map((stack, index) => (
                     <S.StackTag key={index} stack={stack}>
                         {stack}
                     </S.StackTag>
                 ))}
-                <button
-                    type='button'
-                    onClick={hiddenSkills}
-                    title='Ocultar stacks'
-                >
-                    X
-                </button>
             </S.Stacks>
         </S.Card>
 

@@ -10,7 +10,9 @@ export const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100dvh;
+    height: auto;
+    padding: 100px 0;
     background-color: rgba(0,0,0,0.6);
 
     ${breakpoints.mobile`

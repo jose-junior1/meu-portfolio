@@ -7,7 +7,9 @@ export const Container = styled.section`
     justify-content: center;
     gap: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100dvh;
+    height: auto;
+    padding: 100px 0;
     background-color: #1b1a1aff;
     color: #f1f1f1;
     text-align: center;

@@ -119,27 +119,17 @@ export const StackButton = styled.button`
 `
 
 export const Stacks = styled.div`
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    padding-left: 8px;
+    box-sizing: border-box;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
+    padding-top: 8px;
+    padding-left: 8px;
     transform: translateX(100%);
     opacity: 0;
     transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
     pointer-events: none;
-
-    button {
-        padding: 0 6px;
-        background-color: transparent;
-        background-color: red;
-        color: #fff;
-        border: none;
-        border-radius: 6px;
-        font-weight: bold;
-    }
 
     &.visible {
         transform: translateX(0);
@@ -233,4 +223,19 @@ export const StackTag = styled.span<{stack: string}>`
                 `
         }
     }}
+`
+
+export const CloseButton = styled.button`
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 2px 6px;
+        background-color: transparent;
+        background-color: red;
+        box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.5);
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: bold;
 `
