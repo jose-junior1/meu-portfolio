@@ -14,6 +14,7 @@ import jNews from '../assets/img/jnews.png'
 import news from '../assets/img/ebac-news.png'
 import motors from '../assets/img/ebac-motors.png'
 import todo from '../assets/img/todo-vue.png'
+import bankPro from '../assets/img/bankpro.png'
 
 export type Project = {
     id: number
@@ -28,6 +29,18 @@ export type Project = {
 const projects: Project[] = [
     {
         id: 1,
+        title: "BankPro - Simulador bancário",
+        img: bankPro,
+        target: "https://bankpro-nu.vercel.app/",
+        stacks: [
+            'React',
+            'TypeScript',
+            'TailwindCSS',
+            'Zustand'
+        ]
+    },
+    {
+        id: 2,
         title: "eFood - E-commerce de restaurantes",
         img: efood,
         target: "https://efood-six-pearl.vercel.app/",
@@ -40,7 +53,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         title: "EPLAY - Loja de Games",
         img: eplay,
         target: "https://eplaygames.vercel.app/",
@@ -53,7 +66,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         title: "Minhas Tarefas - App de Gestão com React + Redux",
         img: tasksRedux,
         target: "https://minhastarefas-lac.vercel.app/",
@@ -66,7 +79,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         title: "Pousada Secreta",
         img: pousada,
         target: "https://webpousada.vercel.app/",
@@ -78,7 +91,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         title: "Recanto dos Livros - Uma livraria espetacular",
         img: recanto,
         target: "https://recanto-dos-livros.vercel.app/",
@@ -90,7 +103,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         title: "Clone - Disney+",
         img: clone,
         target: "https://devjoseclone-disneyplus-two.vercel.app/",
@@ -103,7 +116,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 7,
+        id: 8,
         title: "NuJuros - Simulador de juros",
         img: nuJuros,
         target: "https://nu-juros.vercel.app/",
@@ -115,7 +128,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 8,
+        id: 9,
         title: "Calculadora IMC - A base para a saúde",
         img: imc,
         target: "https://app-imc-saude.vercel.app/",
@@ -127,7 +140,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 9,
+        id: 10,
         title: "GitHub Search Profile - Buscador de perfis",
         img: searchProfile,
         target: "https://githubprofile-josedev.vercel.app/",
@@ -139,7 +152,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 10,
+        id: 11,
         title: "Sorteador de números",
         img: sorteador,
         target: "https://sorteadordevjose.vercel.app/",
@@ -152,7 +165,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 11,
+        id: 12,
         title: "Titan Gourmet Restaurant",
         img: titan,
         target: "https://titan-gourmet.vercel.app/",
@@ -164,7 +177,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 12,
+        id: 13,
         title: "Games The Shop",
         img: games,
         target: "https://games-the-shop.vercel.app/",
@@ -175,7 +188,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 13,
+        id: 14,
         title: "J.News",
         img: jNews,
         target: "https://jnews-one.vercel.app/",
@@ -188,7 +201,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 14,
+        id: 15,
         title: "EBAC News",
         img: news,
         target: "https://ebac-news-dev-jose.vercel.app/",
@@ -200,7 +213,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 15,
+        id: 16,
         title: "EBAC Motors",
         img: motors,
         target: "https://ebac-motors-ten-omega.vercel.app/",
@@ -212,7 +225,7 @@ const projects: Project[] = [
         ]
     },
     {
-        id: 16,
+        id: 17,
         title: "Todo-app com VueJS",
         img: todo,
         target: "https://todolist-devjose.vercel.app/",

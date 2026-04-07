@@ -215,6 +215,17 @@ export const StackTag = styled.span<{stack: string}>`
                     background-color: #3a74ccff;
                     color: #111;
                 `
+            case "tailwindcss":
+                return `
+                    background-color: #06b6d4;
+                    color: #fff;
+                `
+            case "zustand":
+                return `
+                    background-color: #543938;
+                    color: #fff;
+                `
+                
             default:
                 return `
                     border-color: #fff;
